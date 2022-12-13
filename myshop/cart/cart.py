@@ -1,5 +1,7 @@
 from decimal import Decimal
+
 from django.conf import settings
+
 from ..shop.models import Product
 
 
@@ -34,7 +36,7 @@ class Cart:
 
     def remove(self, product):
         """
-        Remove a product from the cart. 
+        Remove a product from the cart.
         """
         product_id = str(product.id)
         if product_id in self.cart:
@@ -64,7 +66,9 @@ class Cart:
         return sum(item["quantity"] for item in self.cart.values())
 
     def get_total_price(self):
-        return sum(Decimal(item["price"]) for item in self.cart.values())
+        return sum(
+            Decimal(item["price"]) * item["quantity"] for item in self.cart.values()
+        )
 
     def clear(self):
         # Remove cart from session

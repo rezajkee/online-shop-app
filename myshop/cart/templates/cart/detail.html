@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "shop/base.html" %}
 
 {% load static %}
 
@@ -23,13 +23,13 @@
           <tr>
             <td>
               <a href="{{ product.get_absolute_url }}">
-                <img src=""{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}>
+                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
               </a>
             </td>
             <td>{{ product.name }}</td>
             <td>{{ item.quantity }}</td>
             <td>
-              <form action="{% url "cart:cart_remove" %}" method="post">
+              <form action="{% url "cart:cart_remove" product.id %}" method="post">
                 <input type="submit" value="Remove">
                 {% csrf_token %}
               </form>
