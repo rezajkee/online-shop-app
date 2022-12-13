@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "myshop",
     "myshop.shop",
+    "myshop.cart",
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+# Cart settings
+
+CART_SESSION_ID = "cart"
