@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "myshop.shop",
     "myshop.cart",
     "myshop.orders",
+    "myshop.payment",
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,9 @@ CART_SESSION_ID = "cart"
 # Send emails to the console
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Stripe settings
+
+STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY")
+STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
+STRIPE_API_VERSION = "2022-11-15"
