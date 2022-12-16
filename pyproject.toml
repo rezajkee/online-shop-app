@@ -15,6 +15,7 @@ Pillow = "^9.3.0"
 celery = "^5.2.7"
 flower = "^1.2.0"
 stripe = "^5.0.0"
+weasyprint = "^57.1"
 
 
 [tool.poetry.group.dev.dependencies]
