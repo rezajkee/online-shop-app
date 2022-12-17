@@ -8,6 +8,7 @@ urlpatterns = [
     path("cart/", include("myshop.cart.urls", namespace="cart")),
     path("orders/", include("myshop.orders.urls", namespace="orders")),
     path("payment/", include("myshop.payment.urls", namespace="payment")),
+    path("coupons/", include("myshop.coupons.urls", namespace="coupons")),
     path("", include("myshop.shop.urls", namespace="shop")),
 ]
 if settings.DEBUG:
