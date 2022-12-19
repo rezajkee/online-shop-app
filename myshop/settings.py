@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "myshop.orders",
     "myshop.payment",
     "myshop.coupons",
+    "rosetta",
 ]
 
 MIDDLEWARE = [
@@ -125,7 +126,7 @@ LANGUAGES = [
     ("ru", _("Russian")),
 ]
 
-LOCALE_PATH = BASE_DIR / "locale"
+LOCALE_PATHS = (BASE_DIR / "locale",)
 
 TIME_ZONE = "UTC"
 

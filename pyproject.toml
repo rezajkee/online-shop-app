@@ -17,6 +17,7 @@ flower = "^1.2.0"
 stripe = "^5.0.0"
 weasyprint = "^57.1"
 redis = "^4.4.0"
+django-rosetta = "^0.9.8"
 
 
 [tool.poetry.group.dev.dependencies]

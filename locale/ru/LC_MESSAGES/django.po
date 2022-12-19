@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-19 14:09+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2022-12-19 22:02+0500\n"
+"PO-Revision-Date: 2022-12-19 17:31+0000\n"
+"Last-Translator:   <rezajkee@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
 #: myshop/cart/forms.py:8 myshop/cart/templates/cart/detail.html:16
 #: myshop/payment/templates/payment/process.html:15
@@ -152,11 +151,11 @@ msgstr ""
 msgid "Pay now"
 msgstr "Оплатить сейчас"
 
-#: myshop/settings.py:124
+#: myshop/settings.py:125
 msgid "English"
 msgstr "Английский"
 
-#: myshop/settings.py:125
+#: myshop/settings.py:126
 msgid "Russian"
 msgstr "Русский"
 
@@ -165,11 +164,15 @@ msgstr "Русский"
 msgid "My shop"
 msgstr "Мой магазин"
 
-#: myshop/shop/templates/shop/base.html:18
+#: myshop/shop/templates/shop/base.html:17
+msgid "Language"
+msgstr "Язык"
+
+#: myshop/shop/templates/shop/base.html:33
 msgid "Your cart"
 msgstr "Ваша корзина"
 
-#: myshop/shop/templates/shop/base.html:20
+#: myshop/shop/templates/shop/base.html:35
 #, python-format
 msgid ""
 "\n"
@@ -196,7 +199,7 @@ msgstr[3] ""
 "                %(items)s товаров, $%(total)s\n"
 "              "
 
-#: myshop/shop/templates/shop/base.html:27
+#: myshop/shop/templates/shop/base.html:42
 msgid "Your cart is empty."
 msgstr "Ваша корзина пуста."
 
