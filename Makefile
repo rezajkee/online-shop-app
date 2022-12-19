@@ -65,15 +65,11 @@ exportreq:
 
 .PHONY: makemessages
 makemessages:
-	cd myshop/ ;\
-	poetry run django-admin makemessages -l ru ;\
-	cd ..
+	poetry run django-admin makemessages --all
 
 .PHONY: compilemessages
 compilemessages:
-	cd myshop/ ;\
-	poetry run django-admin compilemessages ;\
-	cd ..
+	poetry run django-admin compilemessages --ignore .venv
 
 .PHONY: test
 test:
