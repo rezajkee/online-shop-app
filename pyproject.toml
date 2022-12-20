@@ -19,6 +19,7 @@ weasyprint = "^57.1"
 redis = "^4.4.0"
 django-rosetta = "^0.9.8"
 django-parler = "^2.3"
+django-localflavor = "^3.1"
 
 
 [tool.poetry.group.dev.dependencies]
