@@ -272,6 +272,17 @@ python-versions = ">=3.6"
 Django = ">=3.2"
 
 [[package]]
+name = "django-parler"
+version = "2.3"
+description = "Simple Django model translations without nasty hacks, featuring nice admin integration."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Django = ">=2.2"
+
+[[package]]
 name = "django-rosetta"
 version = "0.9.8"
 description = "A Django application that eases the translation of Django projects"
@@ -743,7 +754,7 @@ test = ["pytest"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8.1"
-content-hash = "ea271c9729d6068f0398669c8e427ae8e8b4b350ec68b6d12a86cf80c1ae2990"
+content-hash = "9dc7204b97ccf4f67b67b1861c5ba0ce408704b1bcc7e1ef310fc4f7a2da35e4"
 
 [metadata.files]
 amqp = [
@@ -1019,6 +1030,10 @@ Django = [
 django-extensions = [
     {file = "django-extensions-3.2.1.tar.gz", hash = "sha256:2a4f4d757be2563cd1ff7cfdf2e57468f5f931cc88b23cf82ca75717aae504a4"},
     {file = "django_extensions-3.2.1-py3-none-any.whl", hash = "sha256:421464be390289513f86cb5e18eb43e5dc1de8b4c27ba9faa3b91261b0d67e09"},
+]
+django-parler = [
+    {file = "django-parler-2.3.tar.gz", hash = "sha256:2c8f5012ceb5e49af93b16ea3fe4d0c83d70b91b2d0f470c05d7d742b6f3083d"},
+    {file = "django_parler-2.3-py3-none-any.whl", hash = "sha256:8f6c8061e4b5690f1ee2d8e5760940ef06bf78a5bfa033d11178377559c749cf"},
 ]
 django-rosetta = [
     {file = "django-rosetta-0.9.8.tar.gz", hash = "sha256:a5049d47abafeef6a8aba8a0c12103c93fd77a8bd8436b60307fbd5e1cb8d248"},

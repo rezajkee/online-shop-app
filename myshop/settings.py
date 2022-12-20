@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
-from django.utils.translation import gettext_lazy as _
 
+from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
 
 load_dotenv()  # take environment variables from .env
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "myshop.payment",
     "myshop.coupons",
     "rosetta",
+    "parler",
 ]
 
 MIDDLEWARE = [
@@ -172,3 +173,14 @@ STRIPE_WEBHOOK_SECRET = os.getenv("STRIPE_WEBHOOK_SECRET")
 REDIS_HOST = "localhost"
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+
+# Django-parler settings
+
+PARLER_LANGUAGES = {
+    None: (
+        {"code": "en"},
+        {"code": "ru"},
+    ),
+    "default": {"fallback": "en", "hide_untranslated": False},
+}
